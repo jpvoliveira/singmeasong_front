@@ -1,9 +1,11 @@
+import {faker} from '@faker-js/faker'
+
 /// <reference types="cypress" />
 
 describe("home page", ()=>{
   it("add music successfully", ()=>{
     const music = {
-      name: "new music",
+      name: faker.lorem.sentence(2),
       youtubeLink: "https://www.youtube.com/watch?v=chwyjJbcs1Y"
     }
 
